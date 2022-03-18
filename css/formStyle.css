@@ -1,0 +1,96 @@
+
+html {
+    background-color: #fff9f3;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: inline-block;
+    flex-direction: column;
+    width: 30rem;
+    padding: 1%;
+    margin: auto;
+}
+
+.messageRecycle {
+    display: flex;
+    justify-content: center;
+    background-color: #fff9f3;
+    width: 30rem;
+    padding: 1%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #8ac1c0;
+    border-radius: 10px;
+
+}
+
+div {
+    padding: 2%;
+    font-size: large;
+    font-weight: bold;
+    color: #3d3d3D;
+}
+
+.buttonSub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 50%;  
+    height: 40px;     
+    border: none;
+    outline: none;
+    background: #8ac1c0;        
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    border-bottom: 2px solid #8ac1c0;
+    width: 100%;
+    padding: 20px;
+}
+
+#msg {
+    display: block;
+    width: 108%;
+    height: 10em;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    color: #8ac1c0;
+}
+
+#file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+
