@@ -93,4 +93,8 @@ label{
 	z-index: -1;
 }
 
-
+@media screen and (min-width: 800px) {
+img {
+    display: none;
+}
+}
