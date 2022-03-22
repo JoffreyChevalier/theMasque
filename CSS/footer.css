@@ -7,18 +7,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #4D7D7C;
-    color: #FFF;
+    color: #4D7D7C;
     height: 60px;
     padding: 1em;
-    border-top: solid 5px #C9DEDE;
   }
   
-<<<<<<< HEAD
-  .ref {
-=======
+
   .logo-list {
->>>>>>> main
     display: flex;
     flex-direction: row;
     list-style-type: none;
