@@ -39,8 +39,6 @@ body {
     width: 40rem;
     padding: 0;
     margin: auto;
-}
-
 h2 {
     vertical-align: center;
     text-align: left;
@@ -53,6 +51,7 @@ h2 {
 ::placeholder {
     font-size: 18px;
 }
+
 
  #myform {
     padding: 2%;
@@ -132,7 +131,6 @@ label{
 }
 
 @media (max-width: 800px) {
-    
     .formImg {
          display: none;
          margin: 30px;
