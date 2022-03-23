@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" media="screen" type="text/css" href="css/formStyle.css" />
+        <link rel="stylesheet" media="screen" type="text/css"
+            href="css/formStyle.css" />
         <title>The Masque</title>
     </head>
     <body>
@@ -22,7 +23,7 @@
                 </a>
                 <a href="gallery.html" class="link-list">
                     <li>Gallerie</li>
-                </a> 
+                </a>
                 <a href="rse.html" class="link-list">
                     <li>Contexte</li>
                 </a>
@@ -31,26 +32,33 @@
                 </a>
             </ul>
         </section>
-        <p class="messageRecycle">Ici on partage ses bonnes idées !
-        </p>
-        <form id="myForm" class="container">
-            <div class="userName">
-                <label for="textarea"></label>
-                <input type="text" id="name" placeholder="Nom" name="user_name" value="" required>
-            </div>
-            <div class = "lastName">
-                <input type="text" id="firstname" placeholder="Prénom"
-                    name="user_name" value=""
-                    required>
-            </div>
-            <div class = "emailUser">
-                <input type="email" id="mail" placeholder="@" name="user_mail" value=""
-                    required>
-            </div>
-            <div class = "submitButton">
-                <textarea id="msg" name="user_message" placeholder="laissez nous un message" value="" required></textarea>
-                <button class="buttonSub" type="submit">Partager son idée</button>
-            </div>
+        <section class="contactForm">
+            <form id="myForm" class="container">
+                <p class="messageRecycle">Ici on partage ses bonnes idées !
+                </p>
+                <div class="userName">
+                    <label for="textarea"></label>
+                    <input type="text" id="name" placeholder="Nom"
+                        name="user_name" value="" required>
+                </div>
+                <div class="lastName">
+                    <input type="text" id="firstname" placeholder="Prénom"
+                        name="user_name" value=""
+                        required>
+                </div>
+                <div class="emailUser">
+                    <input type="email" id="mail" placeholder="@"
+                        name="user_mail" value=""
+                        required>
+                </div>
+                <div class="submitButton">
+                    <textarea id="msg" name="user_message" placeholder="message" value="" required></textarea>
+                    <button class="buttonSub" type="submit">Partager son idée</button>
+                </div>
+                <img src="./photos/plant.jpg" id="plant">
+            </form>
+        </section>
+        
                 <img src="./photos/plant.jpg" id="plant">
         </form>
         <section class="footer">
