@@ -27,8 +27,8 @@
 .container {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
+    grid-column-gap: 12px;
+    grid-row-gap: 18px;
     width: 95%;
     margin: auto;
     margin-bottom: 20px;
@@ -52,9 +52,9 @@ h2 {
 }
 
 .imgContainer:hover{
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
 }
 
 
