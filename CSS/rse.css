@@ -1,6 +1,5 @@
 @import "navbar.css";
 @import "footer.css";
-@import url(https://fonts.googleapis.com/css?family=Lato:300);
 
 
 body {
@@ -111,4 +110,9 @@ h1,
 h2 {
   padding-bottom: 1em;
   border-bottom: 1px dashed #888;
+}
+#timer-jeter,
+#timer-nature,
+#timer-mplastique {
+  font-size: 1.4rem;
 }
