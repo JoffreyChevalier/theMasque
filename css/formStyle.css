@@ -1,15 +1,36 @@
-
-html {
-    background-color: #fff9f3;
-}
+@import 'navbar.css';
+@import 'footer.css';
 
 
 body {
-    display: flex;
+    margin: auto;
+    height: 100%;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 122%;
+    z-index: -1;
+    opacity: .15;
+    background: url(/assets/BG.png);
+    background-size: cover;
+  }
+  
+  .bodywithoutnav {
+    max-width: 1500px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 30px;
+  }
+  
+  * {
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+  }
 
 .container {
     display: inline-block;
@@ -32,7 +53,7 @@ body {
 
 }
 
-div {
+ #myform {
     padding: 2%;
     font-size: large;
     font-weight: bold;
@@ -59,6 +80,9 @@ div {
     cursor: pointer;
 }
 
+#plant {
+    border-radius: 40px;
+}
 input {
     display: block;
     border: 0;
@@ -74,8 +98,7 @@ input {
     width: 108%;
     height: 10em;
     border-radius: 10px;
-    border: none;
-    
+    border: none; 
 }
 
 label{
@@ -93,8 +116,12 @@ label{
 	z-index: -1;
 }
 
-@media screen and (min-width: 800px) {
+@media (max-width: 800px) {
 img {
     display: none;
 }
+.container {
+    width: 50%;
+}
+
 }
