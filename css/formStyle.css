@@ -33,27 +33,24 @@ body {
     box-sizing: border-box;
   }
 
-
-
 .container {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     width: 30rem;
     padding: 1%;
     margin: auto;
-}
-
-.messageRecycle {
-    display: flex;
-    justify-content: center;
-    width: 30rem;
-    padding: 1%;
-    font-size: 30px;
-    font-weight: bold;
-    color: #8ac1c0;
-    border-radius: 10px;
 
 }
+
+h2 {
+    vertical-align: center;
+    text-align: left;
+    margin: 45px;
+    font-size: 50px;
+    color: #3D3D3D;
+    font-weight: lighter;
+}
+
 
  #myform {
     padding: 2%;
@@ -119,7 +116,8 @@ label{
 }
 
 @media (max-width: 800px) {
-img {
+    
+.formImg {
     display: none;
 }
 .myForm {
