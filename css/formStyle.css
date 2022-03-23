@@ -46,7 +46,6 @@ body {
 .messageRecycle {
     display: flex;
     justify-content: center;
-    background-color: #fff9f3;
     width: 30rem;
     padding: 1%;
     font-size: 30px;
