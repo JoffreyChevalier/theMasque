@@ -39,6 +39,9 @@ body {
     width: 40rem;
     padding: 0;
     margin: auto;
+    font-size: 30px;
+}
+
 h2 {
     vertical-align: center;
     text-align: left;
@@ -100,13 +103,15 @@ input {
     border-bottom: 2px solid #8ac1c0;
     width: 100%;
     padding: 20px;
+    font-size: 18px;
 }
 
 #msg {
     display: block;
     width: 100%;
     font-size: 18px;
-    padding: 10px;
+    padding: 12px;
+    padding-left: 20px;
     height: 10em;
     border-radius: 10px;
     border: none;
