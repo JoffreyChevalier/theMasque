@@ -10,11 +10,11 @@ body {
 body::before {
   content: "";
   position: absolute;
-  top: 95px;
   left: 0;
   width: 100%;
+  z-index: -1;
   height: 122%;
-  opacity: .15; 
+  opacity: .15;
   background: url(/assets/BG.png);
   background-size: cover;
 }
@@ -69,8 +69,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px;
-  border-bottom: solid 6px #8AC1C0;
-  border-right: solid 6px #8AC1C0;
+  box-shadow: 5px 5px 15px #3d3d3d5f;
 }
 
 .grille {
@@ -82,20 +81,19 @@ p {
   justify-content: center;
   grid-gap: 60px;
   padding-bottom: 80px;
+  border-radius: 15px;
 }
 
 .grid-item {
   line-height: 0;
   overflow: hidden;
   border-radius: 15px;
-  border-bottom: solid 6px #8AC1C0;
-  border-right: solid 6px #8AC1C0;
+  box-shadow: 5px 5px 15px #3d3d3d5f;
 }
 
 .grid-item img {
   border-radius: 15px;
-  border-bottom: solid 6px #8AC1C0;
-  border-right: solid 6px #8AC1C0;
+  box-shadow: 5px 5px 15px #3d3d3d5f;
   filter: blur(0px);
   transition: filter 0.3s ease-in;
   transform: scale(1.1);
