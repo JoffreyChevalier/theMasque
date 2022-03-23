@@ -62,7 +62,7 @@ h2 {
     .container {
         grid-template-columns: 1fr 1fr;
     }
-    img {
+    .imgContainer {
         width: 100%;
        }
    }
