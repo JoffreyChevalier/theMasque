@@ -1,89 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" media="screen" type="text/css"
-            href="css/formStyle.css" />
-        <title>The Masque</title>
-    </head>
-    <body>
-        <section class="top-nav">
-            <div class="titleNav">
-                the <b>m</b>asque
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/formStyle.css" />
+    <title>The Masque</title>
+</head>
+<body>
+    <section class="top-nav">
+        <div class="titleNav">
+            the <b>m</b>asque
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <a href="index.html" class="link-list">
+                <li>Accueil</li>
+            </a>
+            <a href="gallery.html" class="link-list">
+                <li>Gallerie</li>
+            </a>
+            <a href="rse.html" class="link-list">
+                <li>Contexte</li>
+            </a>
+            <a href="form.html" class="link-list">
+                <li><span class="idee">À vos idées !</span></li>
+            </a>
+        </ul>
+    </section>
+    <h2><span style=color:#4D7D7C><b>I</b></span>ci on partage ses bonnes idées !</h2>
+    <section class="contactForm">
+        <form id="myForm" class="container">
+           
+            <div class="userName">
+                <label for="textarea"></label>
+                <input type="text" id="name" placeholder="Nom" name="user_name" value="" required>
             </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-            <ul class="menu">
-                <a href="index.html" class="link-list">
-                    <li>Accueil</li>
-                </a>
-                <a href="gallery.html" class="link-list">
-                    <li>Gallerie</li>
-                </a>
-                <a href="rse.html" class="link-list">
-                    <li>Contexte</li>
-                </a>
-                <a href="form.html" class="link-list">
-                    <li>À vos idées !</li>
-                </a>
-            </ul>
-        </section>
-        <section class="contactForm">
-            <form id="myForm" class="container">
-                <p class="messageRecycle">Ici on partage ses bonnes idées !
-                </p>
-                <div class="userName">
-                    <label for="textarea"></label>
-                    <input type="text" id="name" placeholder="Nom"
-                        name="user_name" value="" required>
-                </div>
-                <div class="lastName">
-                    <input type="text" id="firstname" placeholder="Prénom"
-                        name="user_name" value=""
-                        required>
-                </div>
-                <div class="emailUser">
-                    <input type="email" id="mail" placeholder="@"
-                        name="user_mail" value=""
-                        required>
-                </div>
-                <div class="submitButton">
-                    <textarea id="msg" name="user_message" placeholder="message" value="" required></textarea>
-                    <button class="buttonSub" type="submit">Partager son idée</button>
-                </div>
-                <img src="./photos/plant.jpg" id="plant">
-            </form>
-        </section>
-        
-                <img src="./photos/plant.jpg" id="plant">
+            <div class="lastName">
+                <input type="text" id="firstname" placeholder="Prénom" name="user_name" value="" required>
+            </div>
+            <div class="emailUser">
+                <input type="email" id="mail" placeholder="@" name="user_mail" value="" required>
+            </div>
+            <div class="submitButton">
+                <textarea id="msg" name="user_message" placeholder="message" value="" required></textarea>
+                <button class="buttonSub" type="submit">Partager son idée</button>
+            </div>
+            <img class="formImg" src="./photos/plant.jpg" id="plant">
         </form>
-        <section class="footer">
-            <div class="auteur">
-                ©Les Viticodeurs
-            </div>
-            <article id="facebook" class="logo-list">
-                    <a href="https://www.facebook.com" class="logo-img">
-                        <img width="50" height="50" src="assets/facebook.png" alt="facebook" href="facebook.com">
-                    </a>
-                </article>
-                <article id="linkedin" class="logo-list">
-                    <a href="https://www.linkedin.com" class="logo-img">
-                        <img width="50" height="50" src="assets/linkedin.png" alt="linkedin" href="twitter.com">
-                    </a>
-                </article>
-                <article id="insta" class="logo-list">
-                    <a href="https://www.instagram.com" class="logo-img">
-                        <img width="50" height="50" src="assets/instagram.png" alt="instagram" href="instagram.com">
-                    </a>
-                </article>
-            </div>
-            </section>
-
-        <script
-            src="src/form.js"></script>
-    </body>
+    </section>
+    </form>
+    <section class="footer">
+        <div class="auteur">
+            ©Les Viticodeurs
+        </div>
+        <article id="facebook" class="logo-list">
+            <a href="https://www.facebook.com" class="logo-img">
+                <img width="50" height="50" src="assets/facebook.png" alt="facebook" href="facebook.com">
+            </a>
+        </article>
+        <article id="linkedin" class="logo-list">
+            <a href="https://www.linkedin.com" class="logo-img">
+                <img width="50" height="50" src="assets/linkedin.png" alt="linkedin" href="twitter.com">
+            </a>
+        </article>
+        <article id="insta" class="logo-list">
+            <a href="https://www.instagram.com" class="logo-img">
+                <img width="50" height="50" src="assets/instagram.png" alt="instagram" href="instagram.com">
+            </a>
+        </article>
+    </section>
+    <script src="src/form.js"></script>
+</body>
 </html>
