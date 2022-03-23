@@ -13,7 +13,7 @@ body::before {
   left: 0;
   width: 100%;
   z-index: -1;
-  height: 122%;
+  height: 142%;
   opacity: .15;
   background: url(/assets/BG.png);
   background-size: cover;
@@ -88,10 +88,11 @@ p {
 
 .grille {
   width: 95%;
+  max-width: 1300px;
   height: auto;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   grid-gap: 60px;
   padding-bottom: 80px;
@@ -148,6 +149,7 @@ p {
 }
 
 @media (hover: none) { 
+
   .team-title {
     opacity: 1;
     border-radius: 15px;
@@ -158,7 +160,19 @@ p {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+
+  .grille {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-gap: 30px;
+    padding-bottom: 80px;
+    border-radius: 15px;
+  }
 
   .box1 {
     display: block;
