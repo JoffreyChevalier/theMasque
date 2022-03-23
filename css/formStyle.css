@@ -1,17 +1,15 @@
 @import 'navbar.css';
+@import 'footer.css';
 
 
 html {
     background-color: #fff9f3;
 }
 
-
-body {
+.contactForm {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
+
 
 .container {
     display: inline-block;
@@ -101,7 +99,8 @@ label{
 img {
     display: none;
 }
-.container {
+.myForm {
+    display: flex;
     width: 50%;
 }
 
