@@ -126,7 +126,7 @@
     transform: rotate(-405deg);
   }
   
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .menu-button-container {
       display: block;
     }
