@@ -1,0 +1,150 @@
+@import 'navbar.css';
+@import 'footer.css';
+
+
+
+body {
+    margin: auto;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 133%;
+    z-index: -1;
+    opacity: .15;
+    background: url(/assets/BG.png);
+    background-size: cover;
+  }
+  
+  .bodywithoutnav {
+    max-width: 1500px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 30px;
+  }
+  
+  * {
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    padding: 0;
+    margin: auto;
+    font-size: 30px;
+}
+
+h2 {
+    vertical-align: center;
+    text-align: left;
+    margin: 45px;
+    font-size: 50px;
+    color: #3D3D3D;
+    font-weight: lighter;
+}
+
+::placeholder {
+    font-size: 18px;
+}
+
+
+ #myform {
+    padding: 2%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3d3d3D;
+    margin: 30px;
+    box-shadow: 5px 5px 15px #3d3d3d5f;
+}
+
+.buttonSub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;  
+    height: 50px;     
+    border: none;
+    outline: none;
+    background: #8ac1c0;        
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+#plant {
+    display: flex;
+    border-radius: 40px;
+    margin: auto;
+    box-shadow: 5px 5px 15px #3d3d3d5f;
+    margin-bottom: 40px;
+}
+
+input {
+    display: block;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    border-bottom: 2px solid #8ac1c0;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+}
+
+#msg {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+    padding-left: 20px;
+    height: 10em;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    box-shadow: 5px 5px 15px #3d3d3d5f;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    color: #8ac1c0;
+    margin: 30px;
+}
+
+#file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+    margin: 30px;
+}
+
+@media (max-width: 800px) {
+    .formImg {
+         display: none;
+         margin: 30px;
+    }
+    .myForm {
+        display: flex;
+        width: 50%;
+        margin: 30px;
+    }
+
+}
