@@ -162,18 +162,7 @@ p {
 
 @media (max-width: 850px) {
 
-  .grille {
-    width: 85%;
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    grid-gap: 30px;
-    padding-bottom: 80px;
-    border-radius: 15px;
-  }
-
+ 
   .box1 {
     display: block;
     margin: auto;
@@ -204,4 +193,19 @@ p {
     color: #3D3D3D;
   }
   
+}
+
+@media (max-width: 950px) {
+
+.grille {
+  width: 85%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-gap: 30px;
+  padding-bottom: 80px;
+  border-radius: 15px;
+}
 }
