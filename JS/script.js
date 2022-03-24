@@ -1,10 +1,33 @@
-const elemTimer = document.querySelector('#timer');
+const maskTimer = document.querySelector('#timer-jeter');
+const natureTimer = document.querySelector('#timer-nature');
+const mPlasqtiqueTimer = document.querySelector('#timer-mplastique');
+
 let masqueJeter = 0;
+let masqueNature = 0;
+let masqueMplastique = 0;
 
 function comptMask() {
-    masqueJeter += 39351;
-    elemTimer.textContent = Math.floor(masqueJeter);
+    masqueJeter += 0.039351;
+    maskTimer.textContent = Math.floor(masqueJeter);
+};
+
+function comptNature() {
+    masqueNature += 197;
+    natureTimer.textContent = Math.floor(masqueNature);
+};
+
+function comptMplastique() {
+    masqueMplastique += 0.2955;
+    mPlasqtiqueTimer.textContent = Math.floor(masqueMplastique);
 };
 
 setInterval(comptMask, 1000 );
+setInterval(comptNature, 1000 );
+setInterval(comptMplastique, 1000 );
 
+/*let compteur = (type, timer, number) => {
+    type += number;
+    timer.textContent = Math.floor(type);
+
+    return setInterval(compteur, 1000)
+};*/

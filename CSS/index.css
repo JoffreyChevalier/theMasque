@@ -13,7 +13,7 @@ body::before {
   left: 0;
   width: 100%;
   z-index: -1;
-  height: 122%;
+  height: 142%;
   opacity: .15;
   background: url(/assets/BG.png);
   background-size: cover;
@@ -43,7 +43,7 @@ h2 {
 h3 {
   vertical-align: center;
   text-align: left;
-  margin-top: 480px;
+  margin-top: auto;
   margin-left: 45px;
   font-size: 50px;
   color: #3D3D3D;
@@ -51,33 +51,48 @@ h3 {
 }
 
 p {
-  font-size: 20px;
-  width: 80%;
-  line-height: 26px;
-  text-align: center;
-  margin: auto;
+  font-size: 22px;
+  width: 90%;
+  line-height: 28px;
+  font-weight: lighter;
+  text-align: right;
+  justify-content: flex-start;
+  margin: auto 0px;
   color: #3D3D3D;
+  white-space:pre-line;
 }
 
-.slider img {
-  width: 95%;
-  max-width: 800px;
-  height: 350px;
-  margin: 110px auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 15px;
+.box1 {
+  position: relative;
+  width: 90%;
+  display: flex;
+  margin: 30px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box1 .slider {
+  position: relative;
+  max-width: 450px;
+  margin: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.box1 .slider img {
+  width: 400px;
+  border-radius: 20px;
   box-shadow: 5px 5px 15px #3d3d3d5f;
 }
 
 .grille {
-  width: 100%;
+  width: 95%;
+  max-width: 1300px;
   height: auto;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   grid-gap: 60px;
   padding-bottom: 80px;
@@ -117,8 +132,6 @@ p {
   opacity: 0;
   transition: opacity .5s;
   border-radius: 15px;
-  border-bottom: solid 6px #8AC1C0;
-  border-right: solid 6px #8AC1C0;
   color: white;
   display: flex;
   align-items: center;
@@ -136,6 +149,7 @@ p {
 }
 
 @media (hover: none) { 
+
   .team-title {
     opacity: 1;
     border-radius: 15px;
@@ -144,4 +158,50 @@ p {
     filter: blur(2px);
     border-radius: 15px;
   }
+}
+
+@media (max-width: 850px) {
+
+  .grille {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-gap: 30px;
+    padding-bottom: 80px;
+    border-radius: 15px;
+  }
+
+  .box1 {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .box1 .slider{
+    align-items: center;
+    margin: 50px 85px;
+    padding: 0;
+  }
+
+  .box1 .slider img {
+    width: 600px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #3d3d3d5f;
+  }
+
+  p {
+    font-size: 24px;
+    width: 80%;
+    line-height: 30px;
+    font-weight: lighter;
+    text-align: center;
+    justify-content: flex-start;
+    margin: auto;
+    color: #3D3D3D;
+  }
+  
 }
