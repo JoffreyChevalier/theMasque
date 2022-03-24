@@ -2,9 +2,8 @@ const message = "Merci pour votre idée !";
 
 document.getElementById("myForm").addEventListener("submit", function () {
   alert(message);
-  window.open("index.html");
+  /*window.open("index.html");*/
 });
-
 
 
 
