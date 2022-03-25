@@ -136,14 +136,14 @@ label{
 }
 
 @media (max-width: 800px) {
-    .formImg {
+
+    .contFormImg {
          display: none;
          margin: 30px;
     }
-    .myForm {
+    #myForm {
         display: flex;
-        width: 50%;
-        margin: 30px;
+        width: 80%;
     }
 
 }
