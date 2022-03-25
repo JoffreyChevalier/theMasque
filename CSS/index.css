@@ -15,7 +15,7 @@ body::before {
   z-index: -1;
   height: 142%;
   opacity: 0.15;
-  background: url(/assets/BG.png);
+  background: url(../assets/BG.png);
   background-size: cover;
 }
 
