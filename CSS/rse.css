@@ -16,7 +16,7 @@ body::before {
   z-index: -1;
   height: 122%;
   opacity: .15;
-  background: url(/assets/BG.png);
+  background: url(../assets/BG.png);
   background-size: cover;
 
 }
@@ -85,7 +85,7 @@ h6 {
   background-image: url(https://france3-regions.francetvinfo.fr/image/x_8rkGnLTT-6aBMDrPXRepAzBRc/600x400/regions/2021/04/30/608ba7f9eca4d_maxnewsworldfive146185-5295446.jpg);
 }
 .panel:nth-child(11) {
-  background-image: url();
+  background-image: url(https://i.cbc.ca/1.5981792.1617992956!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_780/facemasks.JPG);
 }
 
 .content {
